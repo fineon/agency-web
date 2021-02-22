@@ -1,3 +1,18 @@
 //all colors and styles go here
 
-$color: #0000;
+$purple: #6C63FF;
+$orange: #F9A826;
+$red: #F50057;
+$green: #00BFA6;
+
+//margin variables
+$deskmargin: 32px;
+
+//media queries mixins
+@mixin tablet {
+    @media screen and (min-width:360px) {
+        @content
+    }
+};
+
+// font mixins

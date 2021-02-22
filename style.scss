@@ -1,1 +1,47 @@
 @import './branding';
+
+.header{
+    display: flex;
+
+    &__nav{
+        &__logo{
+            font-size: 2em;
+            font-weight: lighter;
+        }
+    }
+
+    &__title{
+        color:$orange;
+        font-size: 5em;
+    }
+
+    &__subtitle{
+        font-weight: lighter;
+        color: darkolivegreen;
+    }
+
+    &__button{
+        background-color: $orange;
+        border: none;
+        font-size: 1.5em;
+        padding: 8px;
+    }
+
+    &__container{
+        width: 50%;
+    }
+
+    &__container--img{
+        width: 50%;
+        background-color: $orange;
+        padding: 32px;
+        clip-path: circle(50%);
+
+        &__img{
+            width: 100%;
+            background-color: white;
+            z-index: 2021;
+            position: relative;
+        }
+    }
+}

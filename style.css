@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__nav__logo {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.header__title {
+  color: #F9A826;
+  font-size: 5em;
+}
+
+.header__subtitle {
+  font-weight: lighter;
+  color: darkolivegreen;
+}
+
+.header__button {
+  background-color: #F9A826;
+  border: none;
+  font-size: 1.5em;
+  padding: 8px;
+}
+
+.header__container {
+  width: 50%;
+}
+
+.header__container--img {
+  width: 50%;
+  background-color: #F9A826;
+  padding: 32px;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+}
+
+.header__container--img__img {
+  width: 100%;
+  background-color: white;
+  z-index: 2021;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

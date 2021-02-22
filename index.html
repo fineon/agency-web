@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Agency website</title>
 </head>
 
 <body>
+    <nav class="header__nav">
+        <p class="header__nav__logo">
+            logo
+        </p>
+    </nav>
     <header class="header">
-        <nav class="header__nav">
-            <p class="header__nav__logo">logo</p>
-        </nav>
-        <h1 class="header__title">title here</h1>
-        <h2 class="header__subtitle">subtitle</h2>
-        <button class="header__button">click here</button>
+        <div class="header__container"> 
+            <h1 class="header__title">title here</h1>
+            <h2 class="header__subtitle">subtitle</h2>
+            <button class="header__button">click here</button>
+        </div>
+        <div class="header__container--img">
+            <img class="header__container--img__img" src="./assets/undraw_tourist_map_re_293e.svg" alt="">
+        </div>
     </header>
+
     <section class="about">
         <div class="about__container">
             <img class="about__container__img" src="" alt="">
@@ -39,6 +48,7 @@
             </div>
         </div>
     </section>
+
     <section class="numbers">
         <div class="numbers__container">
             <h2 class="numbers__container__num">250</h2>
@@ -57,6 +67,7 @@
             <p class="numbers__container__desc">desc4</p>
         </div>
     </section>
+
     <section class="history">
         <div class="history__container">
             <p class="history__container__subtitle">history</p>
@@ -102,9 +113,32 @@
             <video class="history__container__vid" src=""></video>
         </div>
     </section>
-    <footer>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="" alt="logo">
+            <img src="" alt="social icon">
+        </div>
+        <div class="footer__container">
+            <h3 class="footer__container__title">Location</h3>
+            <p class="footer__container__desc">yuh Ave, 3230</p>
+        </div>
+        <div class="footer__container">
+            <h3 class="footer__container__title">Contact</h3>
+            <p class="footer__container__desc">pls email: yuh@yuhhhh.com</p>
+        </div>
+        <div class="footer__container">
+            <h3 class="footer__container__title">Subscribe</h3>
+            <form action="" class="footer__container__form">
+                <input type="text" class="footer__container__form__input">
+                <button class="footer__container__form__input__button">
+                    ->
+                </button>
+                </input>
+            </form>
+        </div>
     </footer>
+
 </body>
 
 </html>

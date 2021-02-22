@@ -1,0 +1,14 @@
+# a project for front-end development for an agency website
+
+I want to test my front-end development skills and styling to achieve better techniques for website appearances.
+
+## tech stack
+- vanilla HTML
+- SCSS -> compiled to CSS
+- vanilla JS 
+- deployed using GitHub Pages
+
+But my furture plans, i may convert this project to a React app
+
+## view the website 
+link: https://fineon.github.io/agency-web-practice/
