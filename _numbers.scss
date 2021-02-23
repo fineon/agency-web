@@ -4,12 +4,14 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     background-color: $orange;
+    padding: 8px;
 
     &__container{
         width: 20%;
+        margin: 4px;
     }
 
     &__division--top{

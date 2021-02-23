@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-.about__container__subtitle {
+.about__container__subtitle, .history__container__subtitle {
   margin: 0;
   font-size: 2em;
 }
@@ -77,14 +77,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #F9A826;
+  padding: 8px;
 }
 
 .numbers__container {
   width: 20%;
+  margin: 4px;
 }
 
 .numbers__division--top, .numbers__division--bottom {
@@ -102,10 +104,50 @@
 
 .history {
   margin: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.history__container {
+  width: 50%;
+}
+
+.history__container__timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .footer {
-  margin: 32px;
+  padding: 32px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.footer__container {
+  width: 20%;
+  margin: 4px;
+  padding: 4px;
+}
+
+.footer__container__logo {
+  margin: 4px;
 }
 
 .header {
@@ -119,7 +161,7 @@
   margin: 32px;
 }
 
-.header__nav__logo {
+.header__nav__logo, .footer__container__logo {
   font-size: 2em;
   font-weight: lighter;
 }

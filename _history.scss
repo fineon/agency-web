@@ -2,6 +2,22 @@
 
 .history{
     margin: $deskmargin;
+    display: flex;
+    flex-flow: row wrap;
 
+
+
+    &__container{
+        width: 50%;
+
+        &__subtitle{
+            @extend .about__container__subtitle;
+        }
+
+        &__timeline{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
     
 }
