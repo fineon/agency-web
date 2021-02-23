@@ -1,0 +1,16 @@
+@import './branding';
+
+.about{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__container{
+        width: 50%;
+
+        &__img{
+            width: 100%;
+        }
+    }
+}

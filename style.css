@@ -1,3 +1,27 @@
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__container {
+  width: 50%;
+}
+
+.about__container__img {
+  width: 100%;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,11 +55,25 @@
 }
 
 .header__container--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
-  background-color: #F9A826;
   padding: 32px;
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
+  background-image: url("./assets/halftone10.svg");
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header__container--img__img {
@@ -43,5 +81,7 @@
   background-color: white;
   z-index: 2021;
   position: relative;
+  -webkit-clip-path: circle(30%);
+          clip-path: circle(30%);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 @import './branding';
+@import './about';
 
 .header{
     display: flex;
@@ -32,16 +33,24 @@
     }
 
     &__container--img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         width: 50%;
-        background-color: $orange;
         padding: 32px;
-        clip-path: circle(50%);
+       
+        background-image: url('./assets/halftone10.svg');
+        background-size: 85%;
+        background-position: center;
+        background-repeat: no-repeat;
 
         &__img{
             width: 100%;
             background-color: white;
             z-index: 2021;
             position: relative;
+             clip-path: circle(30%);
         }
     }
 }
