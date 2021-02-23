@@ -40,6 +40,9 @@
             border: 1px solid $purple;
             border-radius: 8px;
             padding: 4px;
+            width: 45%;
+            height: auto;
+            object-fit: contain;
 
             &:hover {
                 background-color: $purple;
@@ -55,7 +58,7 @@
             }
 
             &__desc{
-
+                width: 100%;
             }
         }
     }

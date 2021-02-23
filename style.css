@@ -59,11 +59,19 @@
   border: 1px solid #6C63FF;
   border-radius: 8px;
   padding: 4px;
+  width: 45%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .about__container__logo-container:hover {
   background-color: #6C63FF;
   color: white;
+}
+
+.about__container__logo-container__desc {
+  width: 100%;
 }
 
 .numbers {
@@ -216,5 +224,13 @@
   position: relative;
   -webkit-clip-path: circle(30%);
           clip-path: circle(30%);
+}
+
+body, html {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h4, h5, h6, p, button {
+  font-family: sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

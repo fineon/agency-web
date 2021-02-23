@@ -3,59 +3,12 @@
 @import './numbers';
 @import './history';
 @import './footer';
+@import './header';
 
-.header{
-    display: flex;
-    margin: $deskmargin;
+body,html{
+    margin: 0;
+}
 
-    &__nav{
-        margin: $deskmargin;
-        &__logo{
-            font-size: 2em;
-            font-weight: lighter;
-        }
-    }
-
-    &__title{
-        color:$orange;
-        font-size: 5em;
-    }
-
-    &__subtitle{
-        font-weight: lighter;
-        color: darkolivegreen;
-    }
-
-    &__button{
-        background-color: $orange;
-        border: none;
-        font-size: 1.5em;
-        padding: 8px;
-    }
-
-    &__container{
-        width: 50%;
-    }
-
-    &__container--img{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        padding: 32px;
-       
-        background-image: url('./assets/halftone10.svg');
-        background-size: 85%;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        &__img{
-            width: 100%;
-            background-color: white;
-            z-index: 2021;
-            position: relative;
-             clip-path: circle(30%);
-        }
-    }
+h1,h2,h3,h4,h4,h5,h6,p,button{
+    font-family: sans-serif;
 }
