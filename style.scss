@@ -1,10 +1,14 @@
 @import './branding';
 @import './about';
+@import './numbers';
+@import './history';
 
 .header{
     display: flex;
+    margin: $deskmargin;
 
     &__nav{
+        margin: $deskmargin;
         &__logo{
             font-size: 2em;
             font-weight: lighter;

@@ -5,12 +5,58 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin: $deskmargin;
 
     &__container{
-        width: 50%;
+        width: 45%;
+        &:last-child{
+            margin-left: 16px;
+        }
 
         &__img{
             width: 100%;
+        }
+
+        &__subtitle{
+            margin: 0;
+            font-size: 2em;
+
+            &__border{
+                background-color: $orange;
+                width: 15%;
+                height: 10px;
+                margin-top: -15px;
+            }
+        }
+
+        &__logoflex{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__logo-container{
+            border: 1px solid $purple;
+            border-radius: 8px;
+            padding: 4px;
+
+            &:hover {
+                background-color: $purple;
+                color: white;
+
+            }
+            &__logo{
+
+            }
+
+            &__title{
+
+            }
+
+            &__desc{
+
+            }
         }
     }
 }
