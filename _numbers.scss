@@ -7,11 +7,16 @@
     justify-content: space-between;
 
     background-color: $orange;
-    padding: 8px;
+    padding: 16px;
 
     &__container{
         width: 20%;
         margin: 4px;
+
+        &__num{
+            font-size: 5rem;
+            margin: 16px 0;
+        }
     }
 
     &__division--top{

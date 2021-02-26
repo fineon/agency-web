@@ -20,7 +20,7 @@
 }
 
 .about__container:last-child {
-  margin-left: 16px;
+  margin-left: 40px;
 }
 
 .about__container__img {
@@ -37,6 +37,7 @@
   width: 15%;
   height: 10px;
   margin-top: -15px;
+  z-index: -100;
 }
 
 .about__container__logoflex {
@@ -63,15 +64,20 @@
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .about__container__logo-container:hover {
   background-color: #6C63FF;
   color: white;
+  -webkit-box-shadow: 0px 5px 5px 0.5px rgba(249, 168, 38, 0.5);
+          box-shadow: 0px 5px 5px 0.5px rgba(249, 168, 38, 0.5);
 }
 
 .about__container__logo-container__desc {
   width: 100%;
+  word-break: break-all;
 }
 
 .numbers {
@@ -89,12 +95,17 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #F9A826;
-  padding: 8px;
+  padding: 16px;
 }
 
 .numbers__container {
   width: 20%;
   margin: 4px;
+}
+
+.numbers__container__num {
+  font-size: 5rem;
+  margin: 16px 0;
 }
 
 .numbers__division--top, .numbers__division--bottom {
@@ -122,7 +133,24 @@
 }
 
 .history__container {
-  width: 50%;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.history__container:first-child {
+  margin-right: 16px;
 }
 
 .history__container__timeline {
@@ -133,6 +161,10 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+}
+
+.history__container__vid {
+  width: 100%;
 }
 
 .footer {
@@ -152,10 +184,19 @@
   width: 20%;
   margin: 4px;
   padding: 4px;
+  word-break: break-all;
 }
 
 .footer__container__logo {
   margin: 4px;
+}
+
+.footer__container__link {
+  text-decoration: none;
+}
+
+.footer__container__img {
+  width: 30%;
 }
 
 .header {

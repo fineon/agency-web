@@ -5,10 +5,16 @@
     display: flex;
     flex-flow: row wrap;
 
-
-
     &__container{
-        width: 50%;
+        width: 45%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        &:first-child{
+            margin-right: 16px;
+        }
 
         &__subtitle{
             @extend .about__container__subtitle;
@@ -17,6 +23,10 @@
         &__timeline{
             display: flex;
             flex-flow: row nowrap;
+        }
+
+        &__vid{
+            width:100%;
         }
     }
     
