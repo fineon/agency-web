@@ -75,6 +75,10 @@
           box-shadow: 0px 5px 5px 0.5px rgba(249, 168, 38, 0.5);
 }
 
+.about__container__logo-container__list {
+  padding-left: 16px;
+}
+
 .about__container__logo-container__desc {
   width: 100%;
   word-break: break-all;
@@ -95,7 +99,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #F9A826;
-  padding: 16px;
+  padding: 32px;
 }
 
 .numbers__container {
@@ -269,9 +273,6 @@
 
 body, html {
   margin: 0;
-}
-
-h1, h2, h3, h4, h4, h5, h6, p, button {
   font-family: sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
