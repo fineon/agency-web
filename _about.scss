@@ -7,10 +7,20 @@
     align-items: center;
     margin: $deskmargin;
 
+    @include phone{
+        margin: $phonemargin;
+    }
+
     &__container{
         width: 45%;
+        @include phone {
+            width: 100%;
+        }
         &:last-child{
             margin-left: 40px;
+            @include phone {
+                margin-left: 0;
+            }
         }
 
         &__img{
@@ -20,6 +30,9 @@
         &__subtitle{
             margin: 0;
             font-size: 2em;
+            @include phone {
+                text-align: center;
+            }
 
             &__border{
                 background-color: $orange;
@@ -27,6 +40,10 @@
                 height: 10px;
                 margin-top: -15px;
                 z-index: -100;
+                @include phone {
+                    margin: auto;
+                    top: 5%;
+                }
             }
         }
 
@@ -57,7 +74,9 @@
             }
 
             &__title{
-
+                @include phone {
+                    text-align: center;
+                }
             }
 
             &__list{

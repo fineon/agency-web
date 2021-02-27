@@ -5,7 +5,7 @@
     flex-flow: row wrap;
     margin: $deskmargin;
     @include phone {
-        flex-flow: column wrap;
+        flex-flow: column-reverse wrap;
         margin: $phonemargin;
     }
 
@@ -19,7 +19,11 @@
 
     &__title{
         color:$orange;
-        font-size: 5em;
+        font-size: 5rem;
+        @include phone {
+            font-size: 3rem;
+            text-align: center;
+        }
     }
 
     &__subtitle{
@@ -32,10 +36,14 @@
         border: none;
         font-size: 1.5em;
         padding: 8px;
+
+        @include phone{
+            margin: auto;
+        }
     }
 
     &__container{
-        width: 50%;
+        width: 45%;
 
         @include phone{
             width: 100%;
@@ -48,7 +56,7 @@
         align-items: center;
         justify-content: center;
         width: 50%;
-        padding: 32px;
+        padding: 16px;
        
         background-image: url('#{$path}assets/halftone10.svg');
         background-size: 85%;

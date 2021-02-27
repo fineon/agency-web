@@ -15,12 +15,30 @@
   margin: 32px;
 }
 
+@media screen and (max-width: 320px) {
+  .about {
+    margin: 16px;
+  }
+}
+
 .about__container {
   width: 45%;
 }
 
+@media screen and (max-width: 320px) {
+  .about__container {
+    width: 100%;
+  }
+}
+
 .about__container:last-child {
   margin-left: 40px;
+}
+
+@media screen and (max-width: 320px) {
+  .about__container:last-child {
+    margin-left: 0;
+  }
 }
 
 .about__container__img {
@@ -32,12 +50,25 @@
   font-size: 2em;
 }
 
+@media screen and (max-width: 320px) {
+  .about__container__subtitle, .history__container__subtitle {
+    text-align: center;
+  }
+}
+
 .about__container__subtitle__border {
   background-color: #F9A826;
   width: 15%;
   height: 10px;
   margin-top: -15px;
   z-index: -100;
+}
+
+@media screen and (max-width: 320px) {
+  .about__container__subtitle__border {
+    margin: auto;
+    top: 5%;
+  }
 }
 
 .about__container__logoflex {
@@ -75,6 +106,12 @@
           box-shadow: 0px 5px 5px 0.5px rgba(249, 168, 38, 0.5);
 }
 
+@media screen and (max-width: 320px) {
+  .about__container__logo-container__title {
+    text-align: center;
+  }
+}
+
 .about__container__logo-container__list {
   padding-left: 16px;
 }
@@ -102,14 +139,36 @@
   padding: 32px;
 }
 
+@media screen and (max-width: 320px) {
+  .numbers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    padding: 16px;
+  }
+}
+
 .numbers__container {
   width: 20%;
   margin: 4px;
 }
 
+@media screen and (max-width: 320px) {
+  .numbers__container {
+    width: 50%;
+  }
+}
+
 .numbers__container__num {
   font-size: 5rem;
   margin: 16px 0;
+}
+
+@media screen and (max-width: 320px) {
+  .numbers__container__num {
+    font-size: 3rem;
+  }
 }
 
 .numbers__division--top, .numbers__division--bottom {
@@ -136,6 +195,16 @@
           flex-flow: row wrap;
 }
 
+@media screen and (max-width: 320px) {
+  .history {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 16px;
+  }
+}
+
 .history__container {
   width: 45%;
   display: -webkit-box;
@@ -153,8 +222,24 @@
           align-items: flex-start;
 }
 
+@media screen and (max-width: 320px) {
+  .history__container {
+    width: 100%;
+  }
+}
+
 .history__container:first-child {
   margin-right: 16px;
+}
+
+@media screen and (max-width: 320px) {
+  .history__container:first-child {
+    margin-right: 0;
+  }
+}
+
+.history__container__subtitle {
+  width: 100%;
 }
 
 .history__container__timeline {
@@ -182,6 +267,19 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    padding: 16px;
+  }
 }
 
 .footer__container {
@@ -189,6 +287,12 @@
   margin: 4px;
   padding: 4px;
   word-break: break-all;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__container {
+    width: 100%;
+  }
 }
 
 .footer__container__logo {
@@ -201,6 +305,12 @@
 
 .footer__container__img {
   width: 30%;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__container__img {
+    width: 15%;
+  }
 }
 
 .header {
@@ -217,9 +327,9 @@
 @media screen and (max-width: 320px) {
   .header {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
     margin: 16px;
   }
 }
@@ -235,7 +345,14 @@
 
 .header__title {
   color: #F9A826;
-  font-size: 5em;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .header__title {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
 .header__subtitle {
@@ -250,8 +367,14 @@
   padding: 8px;
 }
 
+@media screen and (max-width: 320px) {
+  .header__button {
+    margin: auto;
+  }
+}
+
 .header__container {
-  width: 50%;
+  width: 45%;
 }
 
 @media screen and (max-width: 320px) {
@@ -275,7 +398,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
-  padding: 32px;
+  padding: 16px;
   background-image: url("./assets/halftone10.svg");
   background-size: 85%;
   background-position: center;

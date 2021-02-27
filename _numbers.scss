@@ -9,13 +9,25 @@
     background-color: $orange;
     padding: $deskmargin;
 
+    @include phone {
+        flex-flow: column wrap;
+        padding: $phonemargin;
+    }
+
     &__container{
         width: 20%;
         margin: 4px;
+        @include phone {
+            width: 50%;
+        }
 
         &__num{
             font-size: 5rem;
             margin: 16px 0;
+
+            @include phone {
+                font-size: 3rem;
+            }
         }
     }
 
