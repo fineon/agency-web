@@ -21,4 +21,4 @@ I want to test my front-end development skills and styling to achieve better tec
 But my furture plans, i may convert this project to a React app
 
 ## view the website 
-link: https://fineon.github.io/agency-web-practice/
+link: https://fineon.github.io/agency-web/
