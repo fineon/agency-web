@@ -1,5 +1,4 @@
 //all colors and styles go here
-
 $purple: #6C63FF;
 $orange: #F9A826;
 $red: #F50057;
@@ -7,13 +6,19 @@ $green: #00BFA6;
 
 //margin variables
 $deskmargin: 32px;
+$tabletmargin: 24px;
+$phonemargin: 16px;
+
+//font size scales
+$h1phone: 12px;
+
 
 //asset path
 $path: './';
 
 //media queries mixins
-@mixin tablet {
-    @media screen and (min-width:360px) {
+@mixin phone {
+    @media screen and (max-width: 320px) {
         @content
     }
 };
