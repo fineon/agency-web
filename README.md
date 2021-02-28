@@ -7,6 +7,8 @@ I want to test my front-end development skills and styling to achieve better tec
 - made a fancy title highlighter using div. I'm happy with how it looks and behave 
 - played around with the image + background header and clip-path in CSS. It gave me more control in shaping images and background into different shapes. Good for adapting to designs with dynamic shapes
 
+- clip-path polygon path navigation: ```X (horizontal) & Y (vertical)``` axis: ```clip-path: polygon(0->X 0->Y, 0->X 100%->Y, 100%->X 0->Y);```
+
 ## Tech stack
 - vanilla HTML
 - SCSS -> compiled to CSS
